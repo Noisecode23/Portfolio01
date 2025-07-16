@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    font-family: "Inter";
+    background-color: #e3e3db;
+    overflow: hidden;
+}
+
+a, p{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.01rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+nav, footer{
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    mix-blend-mode: difference;
+    z-index: 1000;
+}
+
+nav{
+    top: 0;
+}
+
+footer{
+    bottom: 0 ;
+}
+
+.links,
+.socials{
+    display: flex;
+    gap: 2em;
+}
+
+nav > *, .links a{
+    flex: 1;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100svh;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.canvas{
+    position: absolute;
+    will-change: transform;
+}
+
+.item{
+    position: absolute;
+    width: 120px;
+    height: 160px;
+    overflow: hidden;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.expanded-item{
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e3e3db;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3db;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 2;
+}
+
+.overlay .active{
+    pointer-events: none;
+    opacity: 1;
+}
+
+.project-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.project-title p{
+    position: relative;
+    height: 42px;
+    color: #fff;
+    clip-path: polygon( 0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.project-title P .word{
+    position: relative;
+    display: inline-block;
+    font-family: "Inter";
+    font-size: 36px;
+    letter-spacing: -0.02rem;
+    margin-right: 0.1em;
+    transform: translateY(0%);
+    will-change: transform;
+}
