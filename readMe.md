@@ -7,7 +7,7 @@ Welcome to my **personal portfolio project** built to demonstrate both my fronte
 ---
 
 ## 🚀 Live Preview
-[🔗 Click here to view the live site](#) <!-- Replace with your actual deployment link (e.g., Vercel, Netlify, GitHub Pages) -->
+[🔗https://78ankit.netlify.app/](#) <!-- Replace with your actual deployment link (e.g., Vercel, Netlify, GitHub Pages) -->
 
 ---
 
